@@ -20,7 +20,7 @@ print()
 weight = int(input("Укажите вес в целых кг, например 81: "))
 height = float(input("Укажите рост в м.см, например 1.84: "))
 
-print("ИМТ = ",bmi(weight, height))
+print("ИМТ = ", bmi(weight, height))
 
 print()
 print("Примеры:")

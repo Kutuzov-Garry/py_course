@@ -10,6 +10,6 @@ def main():
     bl.show()
 
 
-if __name__ == "__name__":
+if __name__ == "__main__":
     print("main.py has been started")
     main()

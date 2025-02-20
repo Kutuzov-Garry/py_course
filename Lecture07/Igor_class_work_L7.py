@@ -36,4 +36,3 @@ __init__.py  # Признак пакета.
 # Windows cmd - pip --version.
 
 # https://sololearn.com  # Самообучалка.
-
