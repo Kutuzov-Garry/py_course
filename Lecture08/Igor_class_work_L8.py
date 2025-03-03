@@ -102,23 +102,75 @@ ArithmeticError
 >>> 
 
 
->>> def b(x):
+# Some useful exceptions.
+ZeroDivisionError - /, // и%.
+
+ValueError - int() or float()
+
+TypeError -
+short_list = [1]
+one_value = short_list[0.5]
+
+AttributeError -
+short_list = [1]
+short_list.append(2)
+short_list.depend(3)
+
+SyntaxError
+
+
+def a(x):
+	try:
+		res = int(x)
+	except:
+		print("123")
+
+		
+a(123)
+a("")
+123
+a("#@3")
+123
+
+def a(x):
+	try:
+		res = int(x)
+	except:
+		print("123")
+		raise  # Добавили raise.
+
+	    
+a(123)
+a("#@3")
+123
+Traceback (most recent call last):
+  File "<pyshell#13>", line 1, in <module>
+    a("#@3")
+  File "<pyshell#11>", line 3, in a
+    res = int(x)
+ValueError: invalid literal for int() with base 10: '#@3'
+
+
+def b(x):
 	try:
 		a(x)
 	except:
 		print(321)
 		raise
 
-	
->>> b(234)
+	    
+b(234)
+b("$%^")
+123
 321
 Traceback (most recent call last):
-  File "<pyshell#605>", line 1, in <module>
-    b(234)
-  File "<pyshell#604>", line 3, in b
+  File "<pyshell#18>", line 1, in <module>
+    b("$%^")
+  File "<pyshell#16>", line 3, in b
     a(x)
-TypeError: 'int' object is not callable
-
+  File "<pyshell#11>", line 3, in a
+    res = int(x)
+ValueError: invalid literal for int() with base 10: '$%^'
 
 
 # ASSERT - оценщик, валидация.
@@ -153,10 +205,10 @@ Traceback (most recent call last):
     assert False
 AssertionError
 
-# VS Code debugging.
+# VS Code debugging, pdf p51.
 https://code.visualstudio.com/docs/editor/debugging
 
-# Режим Debug в Shell.
+# Режим Debug в IDLE Shell.
 [DEBUG ON]
 >>> 
 [DEBUG OFF]
