@@ -14,8 +14,9 @@ def bmi(weight, height):
     weight < 20 or weight > 200:
         return None
 
-    return round((weight / height ** 2), 1)  # Вычисление ИМТ и округление до 1 цифры после запятой.
-
+    print(round((weight / height ** 2), 1))  # Вычисление ИМТ и округление до 1 цифры после запятой.
+    
+    
 print()
 weight = int(input("Укажите вес в целых кг, например 81: "))
 height = float(input("Укажите рост в м.см, например 1.84: "))
