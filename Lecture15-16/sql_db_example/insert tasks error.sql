@@ -1,0 +1,1 @@
+INSERT INTO task (t_name, t_priority, u_id_fk) VALUES ("RUN", 100, 100);

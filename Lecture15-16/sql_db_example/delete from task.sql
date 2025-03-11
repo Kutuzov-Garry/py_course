@@ -1,0 +1,1 @@
+DELETE FROM task WHERE t_id=5;
